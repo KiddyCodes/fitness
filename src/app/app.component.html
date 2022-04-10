@@ -1,11 +1,30 @@
 <ion-app>
   <ion-split-pane contentId="main-content">
-    <ion-menu contentId="main-content" type="overlay">
+    <ion-menu contentId="main-content" type="overlay" >
       <ion-content>
-        <ion-list id="inbox-list">
-          <ion-list-header>Marvellous Amadi</ion-list-header>
-          <ion-note>amadimarvellous1@gmail.com</ion-note>
+        <ion-list >
+          
+          <ion-card>
+            <ion-icon name="home"></ion-icon>
+          </ion-card>
+          <ion-row style="height: 20px"></ion-row>
 
+          <ion-card>
+            <ion-icon name="home"></ion-icon>
+          </ion-card>
+          <ion-row style="height: 20px"></ion-row>
+          <ion-card>
+            <ion-icon name="home"></ion-icon>
+          </ion-card>
+          <ion-row style="height: 20px"></ion-row>
+          <ion-card>
+            <ion-icon name="home"></ion-icon>
+          </ion-card>
+          <ion-row style="height: 20px"></ion-row>
+          <ion-card>
+            <ion-icon name="home"></ion-icon>
+          </ion-card>
+          <ion-row style="height: 20px"></ion-row>
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
               <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>

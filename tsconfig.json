@@ -2,6 +2,9 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    
+    "rootDir": "./src",
+    
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
@@ -20,4 +23,5 @@
     "strictInputAccessModifiers": true,
     "strictTemplates": true
   }
+ 
 }

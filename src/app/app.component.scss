@@ -1,8 +1,27 @@
 ion-menu ion-content {
+  min-width: 100px;
   --background: var(--ion-item-background, var(--ion-background-color, #fff));
+}
+.split-pane-visible >.split-pane-side {
+  min-width: 50px; /* Default: 270px */
+  max-width: 80px; /* Same as when menu opens in mobile mode */
+}
+
+
+ion-card {
+  padding-top: 10px;
+  padding-left: 20px;
+
+  width: 100px;
+  height: 40px;
+  
+}
+ion-card {
+  font-size: 20px;
 }
 
 ion-menu.md ion-content {
+  
   --padding-start: 8px;
   --padding-end: 8px;
   --padding-top: 20px;
@@ -20,6 +39,7 @@ ion-menu.md ion-note {
 ion-menu.md ion-list-header,
 ion-menu.md ion-note {
   padding-left: 10px;
+  
 }
 
 ion-menu.md ion-list#inbox-list {
